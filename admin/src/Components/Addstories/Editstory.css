@@ -1,0 +1,67 @@
+.edit-blog-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.edit-blog-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.edit-blog-form p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+.edit-blog-form input[type="text"],
+.edit-blog-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.edit-blog-form .jodit-wysiwyg {
+    min-height: 200px;
+    margin-bottom: 15px;
+}
+
+.edit-blog-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.edit-blog-form .btn.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit-blog-form .btn.primary:hover {
+    background-color: #0056b3;
+}
+
+.edit-blog-form .btn.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.edit-blog-form .btn.secondary:hover {
+    background-color: #5a6268;
+}

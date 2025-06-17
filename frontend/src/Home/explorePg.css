@@ -1,0 +1,1308 @@
+.body-of-explore {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  letter-spacing: 0.05em;
+  word-spacing: 0.03em;
+}
+h1 {
+  font-size: 2.5em;
+
+}
+.explore-container {
+  /* padding: 20px; */
+  padding-top: 65px; 
+}
+
+/* How are you feeling section */
+.how-are-you-feeling {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 0;
+  /* background-color: pink; */
+  background-color: rgb(255, 255, 255);
+  /* background-image: url("green-bg.jpg"); */
+  /* filter: brightness(60%); */
+
+  background-size: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  height: 630px;
+}
+
+.beige-section {
+   background-image: url(green-bg.jpg);
+  background-size: cover;
+  padding: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 480px;
+  width: 1300px;
+  margin-top: 25px; 
+  /* padding-left: 150px; */
+}
+
+.white-section {
+  background-color: rgba(137, 180, 212, 0.395);
+  backdrop-filter: blur(6px); 
+  margin-top: 120px;
+  padding: 20px; 
+  width: 1100px;
+  border-radius: 10px;
+  margin-left: 80px;
+  height: 200px;
+}
+
+.heading-section {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.heading-section h2 {
+  margin: 0;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 700;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); Add text shadow here */
+}
+
+.feelings-buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px; /* Reduce the gap between buttons */
+}
+
+.feeling-button {
+  padding: 10px 35px;
+  margin: 0; /* Remove margin between buttons */
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  */
+}
+
+.feeling-button:hover {
+  background-color: darkgray;
+  transform: scale(1.05);
+}
+
+ .journal-section {
+  width: 100%;
+  max-width: 1150px;
+  background-color: #1e676f;
+  border-radius: 10px;
+  padding: 20px;
+    position: relative;
+    height: 520px; 
+    overflow: hidden;
+    margin: 60px 165px 50px;
+   }
+  
+  .journal-image {
+    margin-top: 20px;
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(243, 239, 239, 0.3);
+    transform: translate(-50%, -50%) rotate(-4deg); 
+  }
+  
+  .sticky-note {
+    margin-top: 30px;
+    position: absolute;
+    top: 70px;
+    left: 440px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 14px;
+    max-width: 110px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotate(4deg);
+  }
+  
+  .journal-heading h1{
+    font-size: 2.5em;
+    margin-top: 65px;
+    margin-left: 590px;
+    width: 400px;
+  }
+
+  .journal-description p{
+    font-size: 1.1em;
+    margin-top: 60px;
+    margin-left: 545px;
+    width: 480px;
+  }
+
+  .journal-button button{
+    margin-left: 650px;
+    height: 45px;
+    width: 150px;
+    margin-top: 60px;
+  }
+
+
+
+
+
+  /* Quiz section */
+
+  .quiz-card-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 326px;
+    width: 326px;
+  }
+  
+  .circle-image-container {
+    width: 326px; 
+    height: 326px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .circle-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    object-fit: cover;
+  }
+  
+  .quiz-button {
+    margin-top: -31px;
+   padding: 10px 20px;
+   background-color: #000000;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 14px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+  }
+
+  .quiz-button:hover {
+    background-color: #3b3d40;
+  }
+
+.quiz-section {
+  background-color: #89D7AF;
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 1519px;
+  border-radius: 15px;
+}
+
+.quiz-heading {
+  text-align: center;
+  font-weight: 700;
+  font-family: Poppins;
+  letter-spacing: -1px;
+  word-spacing: 0.05em;
+  margin: auto;
+  margin-bottom: 17px;
+  font-size: 1.6rem;
+  margin-top: 26px;
+}
+
+.quiz-heading-h1 {
+  font-size: 1.52em;
+  color: black;
+  text-shadow: none;
+  margin-top: 20px;
+  text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.703);
+}
+
+.quiz-heading-h2{
+  margin-bottom: 17px;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  text-shadow: none;
+  color: black;
+}
+.upper-of-quiz {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 111px;
+  margin-top: -28px;
+  margin-bottom: 20px;
+}
+
+.left-section-of-quiz {
+  width: 40%;
+}
+
+.left-section-of-quiz img {
+  margin-left: 105px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.right-section-of-quiz {
+  width: 50%;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.right-section-of-quiz h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.right-section-of-quiz p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+
+.quiz-card-image-container:hover img {
+  filter: brightness(50%);
+}
+
+.quiz-card-image-container:hover .quiz-button {
+  opacity: 1;
+}
+
+.lower-of-quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz-card-image-container:hover {
+  transform: translateY(-10px);
+}
+
+.view-more-of-quiz {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.view-more-button-of-quiz-section {
+  font-size: 1.25em;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: -23px;
+  margin-bottom: 7px;
+}
+
+.view-more-button-of-quiz-section:hover {
+  background-color: rgb(47, 46, 46);
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* Blogs section */
+.blogs-section {
+  height: 550px;
+  width: 100%;
+  /* background-color: rgb(247, 0, 197); */
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.blogs-heading{
+  text-align: center;
+  font-size: 2.5em; 
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  font-weight: 700;
+  color: black;
+  font-family: Poppins;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+}
+
+.blogs-heading p {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.blog-slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.blog-card {
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h3 {
+  padding: 10px;
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.prev-button:hover:not(:disabled),
+.next-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.blog-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
+
+
+
+/* Podcast code 1 css */
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #e99999;
+  padding: 20px 0;
+  position: relative;
+  /* margin-top: 120px; */
+  padding-bottom: 50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.explore-podcast-h1 {
+  font-size: 2.2em;
+  color: black;
+  text-shadow: none;
+  margin-top: 20px;
+  text-shadow: 3px 2px 4px rgba(255, 255, 255, 0.703);
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  animation: scroll 60s linear infinite; 
+}
+
+.podcast-card {
+  flex: 0 0 auto;
+  width: 150px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.podcast-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcast-title {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+/* Stories section */
+.whole-stories-section {
+  height: 800px;
+  width: 100%;
+  /* width: calc(100% - 40px); */
+  /* background-color: rgb(0, 169, 247); */
+  background-color: #1ea08c; /* Use a suitable color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.stories-section {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.stories-heading {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333; 
+}
+
+.stories-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stories-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stories-img {
+  width: 40%;
+}
+
+.stories-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.stories-info {
+  width: 55%;
+}
+
+.stories-info-left,
+.stories-info-right {
+  padding: 0 20px;
+}
+
+.story-heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.story-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.story-button {
+  background-color: #007bff; /* Change to your preferred color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.story-button:hover {
+  background-color: #0056b3; 
+}
+
+.podcast-of-explore{
+  width: 100%;
+  overflow: hidden;
+  background-color: #e99999;
+  padding: 20px 0;
+  position: relative;
+  /* margin-top: 120px; */
+  padding-bottom: 50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.feeling-button {
+  padding: 10px 35px;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(120, 12, 12);
+  color: #177e49;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.explore-pg-h2 {
+  font-size: 2.8em;
+  /* color: #FF3737; */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+.white-section {
+  background-color: rgba(137, 180, 212, 0.395);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  margin-top: 120px;
+  padding: 20px;
+  width: 1100px;
+  border-radius: 10px;
+  margin-left: 80px;
+  height: 200px;}
+
+
+
+
+
+  .body-of-explore {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  letter-spacing: 0.05em;
+  word-spacing: 0.03em;
+}
+h1 {
+  font-size: 2.5em;
+
+}
+
+.explore-pg-h2 {
+  font-size: 2.8em;
+  /* color: #FF3737; */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+}
+.explore-container {
+  /* padding: 20px; */
+  padding-top: 65px; 
+}
+
+/* How are you feeling section */
+.how-are-you-feeling {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 0;
+  /* background-color: pink; */
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  height: 630px;
+}
+
+.beige-section {
+   background-image: url(green-bg.jpg);
+  /* background-image: url(day-sky-feelings-bg.jpg); */
+  background-size: cover;
+  padding: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 480px;
+  width: 1300px;
+  margin-top: 25px; 
+  /* padding-left: 150px; */
+}
+
+.white-section {
+  background-color: rgba(137, 180, 212, 0.395);
+  backdrop-filter: blur(6px); 
+  margin-top: 120px;
+  padding: 20px; 
+  width: 1100px;
+  border-radius: 10px;
+  margin-left: 80px;
+  height: 200px;
+}
+
+.heading-section {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.feelings-buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px; /* Reduce the gap between buttons */
+}
+
+.feeling-button {
+  padding: 10px 35px;
+  margin: 0; /* Remove margin between buttons */
+  background-color: rgb(255, 255, 255);
+  color: rgb(120, 12, 12);
+  color: #177e49;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1); 
+}
+
+.feeling-button:hover {
+  background-color: darkgray;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* Journal section */
+/* .journal-section {
+  padding: 80px 0;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.journal-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #165b62;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.journal-heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  margin-top: -5px;  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.para-below-journal-heading{
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0 135px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+
+}
+
+.journal-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.journal-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 25px 20px;
+  height: 440px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journal-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.journal-card-upper {
+  margin-bottom: 7px;
+  height: 175px;
+  margin-top: 15px;
+}
+
+.journal-card-title {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+  color: black;
+}
+
+.journal-card-subtitle {
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+  color: black;
+}
+
+.journal-card-image img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+} */
+
+
+
+/* Journal section */
+/* .journal-section {
+  padding: 80px 0;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 500px; 
+} */
+
+/* New CSS for journal section */
+/* .journal-section {
+  padding: 80px 0;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.journal-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #165b62;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.journal-heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.journal-sub-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+  /* height: 500px; Adjust this value according to your design */
+/* }
+.journal-left {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card-heading {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.card-video {
+  width: 250px;
+  height: 250px; */
+  /* margin-bottom: 10px; */
+/* } */
+
+/* 
+.card-text {
+  font-size: 1.2em;
+  line-height: 1.5;
+} */
+
+/* Right section with paragraph */
+/* .journal-right {
+  width: 50%;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.journal-right p {
+  font-size: 1.2em;
+  line-height: 1.5;
+} */
+
+
+/* //////////////////////////////// */
+/* 
+.journal-card {
+  display: none; */
+  /* position: absolute; */
+  /* width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 1s ease-in-out;
+}
+
+.journal-card.active {
+  display: block;
+  opacity: 1;
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+.card-img {
+  width: 250px;
+  height: 250px; */
+  /* margin-bottom: 10px; */
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+  /* Quiz section */
+
+  .quiz-card-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s;
+    height: 326px;
+    width: 326px;
+  }
+  
+  .circle-image-container {
+    width: 326px; 
+    height: 326px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .circle-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    object-fit: cover;
+  }
+  
+  .quiz-button {
+    margin-top: -31px;
+   padding: 10px 20px;
+   background-color: #000000;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 14px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+  }
+
+  .quiz-button:hover {
+    background-color: #3b3d40;
+  }
+
+.quiz-section {
+  background-color: #89D7AF;
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 1519px;
+  border-radius: 15px;
+}
+
+.quiz-heading {
+  text-align: center;
+  font-weight: 700;
+  font-family: Poppins;
+  letter-spacing: -1px;
+  word-spacing: 0.05em;
+  margin: auto;
+  margin-bottom: 17px;
+  font-size: 1.6rem;
+  margin-top: 26px;
+}
+
+.quiz-heading-h1 {
+  font-size: 1.52em;
+  color: black;
+  text-shadow: none;
+  margin-top: 20px;
+  text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.703);
+}
+
+.quiz-heading-h2{
+  margin-bottom: 17px;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  text-shadow: none;
+  color: black;
+}
+.upper-of-quiz {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 111px;
+  margin-top: -28px;
+  margin-bottom: 20px;
+}
+
+.left-section-of-quiz {
+  width: 40%;
+}
+
+.left-section-of-quiz img {
+  margin-left: 105px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.right-section-of-quiz {
+  width: 50%;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.right-section-of-quiz h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.right-section-of-quiz p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+
+.quiz-card-image-container:hover img {
+  filter: brightness(50%);
+}
+
+.quiz-card-image-container:hover .quiz-button {
+  opacity: 1;
+}
+
+.lower-of-quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz-card-image-container:hover {
+  transform: translateY(-10px);
+}
+
+.view-more-of-quiz {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.view-more-button-of-quiz-section {
+  font-size: 1.25em;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: -23px;
+  margin-bottom: 7px;
+}
+
+.view-more-button-of-quiz-section:hover {
+  background-color: rgb(47, 46, 46);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+/* Blogs section */
+.blogs-section {
+  height: 550px;
+  width: 100%;
+  /* background-color: rgb(247, 0, 197); */
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.blogs-heading{
+  text-align: center;
+  font-size: 2.5em; 
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  font-weight: 700;
+  color: black;
+  font-family: Poppins;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+}
+
+.blogs-heading p {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+.blog-slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.blog-card {
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h3 {
+  padding: 10px;
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.prev-button:hover:not(:disabled),
+.next-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.blog-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
+
+
+
+
+
+/* Podcast code 1 css */
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #e99999;
+  padding: 20px 0;
+  position: relative;
+  /* margin-top: 120px; */
+  padding-bottom: 50px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+
+
+.explore-podcast-h1 {
+  font-size: 2.2em;
+  color: black;
+  text-shadow: none;
+  margin-top: 20px;
+  text-shadow: 3px 2px 4px rgba(255, 255, 255, 0.703);
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  animation: scroll 60s linear infinite; 
+}
+
+.podcast-card {
+  flex: 0 0 auto;
+  width: 150px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.podcast-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.podcast-title {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}

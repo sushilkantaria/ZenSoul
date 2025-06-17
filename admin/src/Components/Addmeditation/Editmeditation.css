@@ -1,0 +1,50 @@
+.edit-meditation-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.edit-meditation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.edit-meditation-form p {
+    margin: 10px 0;
+}
+
+.edit-meditation-form input,
+.edit-meditation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-meditation-form .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-meditation-form .btn.primary {
+    background-color: #1f85a1;
+    color: white;
+}
+
+.edit-meditation-form .btn.secondary {
+    background-color: #ccc;
+    color: #333;
+}
+
+.edit-meditation-form .btn.primary:hover {
+    background-color: #166a81;
+}
+
+.edit-meditation-form .btn.secondary:hover {
+    background-color: #aaa;
+}

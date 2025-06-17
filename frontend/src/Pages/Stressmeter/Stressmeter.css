@@ -1,0 +1,123 @@
+/* .quiz-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .quiz-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .question label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .options label {
+    margin-right: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+   .stressmeter-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--primary-border-color, #ccc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-bg-color, #fff);
+    font-family: var(--primary-font, Arial, sans-serif);
+  }
+  
+  .stressmeter-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-text-color, #333);
+  }
+  
+  .stressmeter-question {
+    margin-bottom: 20px;
+    color: var(--primary-text-color, #333);
+  }
+  
+  .stressmeter-question label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .stressmeter-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .stressmeter-options label {
+    margin-right: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .stressmeter-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--button-bg-color, #007bff);
+    color: var(--button-text-color, white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .stressmeter-button:hover {
+    background-color: var(--button-hover-bg-color, #0056b3);
+  }
+  
+  .stressmeter-result {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-text-color, #333);
+  }
+  
+  .stressmeter-result h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  

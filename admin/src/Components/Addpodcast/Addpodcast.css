@@ -1,0 +1,69 @@
+.create-post {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    text-align: center; /* Center the title */
+    color: #333; /* Darker text color for contrast */
+    margin-bottom: 20px;
+}
+
+.form_error-message {
+    color: red; /* Highlight errors in red */
+    margin-bottom: 10px;
+    display: none; /* Hide by default, show only when there's an error */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.form input[type="text"],
+.form textarea,
+.form .btn {
+    padding: 10px; /* Padding inside the inputs and button */
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background for inputs */
+}
+
+.form .btn.primary {
+    background-color: #1f85a1; /* Primary button color */
+    color: #fff; /* White text on the button */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.form .btn.primary:hover {
+    background-color: #166a81; /* Darker shade on hover */
+}
+
+textarea {
+    min-height: 200px; /* Minimum height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+@media (max-width: 800px) {
+    .create-post {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .form {
+        gap: 15px; /* Adjust space between elements for smaller screens */
+    }
+}

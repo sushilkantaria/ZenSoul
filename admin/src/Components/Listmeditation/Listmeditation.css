@@ -1,0 +1,31 @@
+.list-meditation {
+    padding: 20px;
+}
+
+.listmeditation-format-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.listmeditation-allmeditations {
+    padding-top: 10px;
+}
+
+.listmeditation-format {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listmeditation-edit-icon, .listmeditation-remove-icon {
+    background-color: #1f85a1;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.listmeditation-edit-icon:hover, .listmeditation-remove-icon:hover {
+    background-color: #166a81;
+}

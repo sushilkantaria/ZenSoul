@@ -1,0 +1,250 @@
+.anxiety-pg-ind-container {
+    text-align: center;
+    font-family: 'Poppins';
+    padding: 20px;
+    padding-top: 100px; /* Adjust if needed for your navbar height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    /* uniformity */
+}
+
+.anxiety-pg-ind-heading {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* uniformity */
+}
+
+.anxiety-pg-ind-sections {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%; /* Ensures the sections take up the full width */
+    box-sizing: border-box;
+    padding-top: 20px;
+    position: relative;
+}
+
+.anxiety-pg-ind-section {
+    padding: 20px;
+    border-radius: 10px;
+    /* uniformity */
+}
+
+.anxiety-pg-ind-left,
+.anxiety-pg-ind-right {
+    position: sticky;
+    top: 100px; /* Adjust this to match the height of your navbar */
+    height: calc(100vh - 120px); /* Full viewport height minus padding and navbar */
+    overflow-y: auto;
+}
+
+.anxiety-pg-ind-left {
+    background-color: #490000;
+    color: white;
+    width: 20%; 
+    text-align: left;
+    height: 450px;
+}
+
+
+/* //////////////////////////  yoga   //////////////////////// */
+
+.yoga-pg-ind-left {
+    background-color: #e9e9e9;
+    color: black;
+    width: 20%; 
+    text-align: left;
+    height: 680px;
+}
+
+/* ////////////////////   yoga     ////////////////////////////// */
+
+.anxiety-pg-ind-left-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.anxiety-pg-ind-left-list li {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+}
+
+.anxiety-pg-ind-left-list li:hover {
+    background-color: #ed8e8e; 
+    color: white;
+}
+
+
+.anxiety-pg-ind-middle {
+    /* background-color: #87CEEB;  */
+    background-color: #77cdef; 
+    color: black;
+    width: 60%; /* Takes up the remaining space */
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+
+/* ////////////////yoga///////////// */
+
+
+
+.yoga-pg-ind-middle {
+    /* background-color: #87CEEB;  */
+    background-color: #ffffff; 
+    color: black;
+    width: 75%; /* Takes up the remaining space */
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    height: 900px;
+    box-sizing: border-box;
+}
+
+/* ///////////////////////////////yoga///////////// */
+
+.anxiety-pg-ind-card-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.anxiety-pg-ind-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 250px;
+    width: 45%; /* Each card takes up about half the row */
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.anxiety-pg-ind-card:hover {
+    transform: translateY(-5px);
+}
+
+.anxiety-pg-ind-card-img {
+    width: 356px;
+    height: 250px;
+    display: block;
+}
+
+.anxiety-pg-ind-card-title {
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.anxiety-pg-ind-content-of-anxiety {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    /* color: #333; */
+    color: #000000;
+    text-align: left;
+    margin-right: 42px;
+}
+
+.anxiety-pg-ind-h2-heading-of-anxiety {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #1d1d1d;
+    text-align: left;
+}
+.anxiety-pg-ind-h2-heading-of-anxiety-center{
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+}
+
+
+/* /////////////   yoga    ////////////////// */
+
+.yoga-pg-ind-h2-heading-of-anxiety-center{
+    text-align: left;  
+    color: black;
+    margin-top: 40px;
+    font-size: 1.9rem;
+}
+
+
+.yoga-pg-ind-h2-heading-of-anxiety-center{
+    color: black;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 19px;
+}
+
+
+/* /////////////// yoga  ///////////////// */
+
+.anxiety-pg-ind-h3{
+    font-size: 1.3em;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    /* color: #333; */
+    font-style: italic;
+}
+.anxiety-pg-ind-ul  {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    letter-spacing: .4px;
+}
+
+
+/* ////////////////////////   for yoga pg  ///////////////////*/
+
+.anxiety-pg-ind-ul-yoga  {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    letter-spacing: .4px;  
+    line-height: 33px;
+    padding-right: 25px;
+    margin-right: 25px; 
+}
+
+/* ////////////////////////////////////// */
+.anxiety-pg-ind-solutions-list{
+    margin-bottom: 9px;
+    font-size: 1.2em;
+}
+.anxiety-pg-ind-solutions-list a{
+    text-decoration: none;
+}
+.anxiety-pg-ind-solutions-list-sublist{
+    color: black;
+}
+ul li {
+    margin-bottom: 15px;
+}
+
+
+.yoga-act-imgs {
+    width: 750px; /* Adjust as needed */
+    height:500px;
+    display: block;
+    margin: 20px 0; /* Add spacing if needed */
+}

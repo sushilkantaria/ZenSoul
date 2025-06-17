@@ -1,0 +1,26 @@
+.admin{
+    display: flex;
+}
+
+.admin-content{
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+@media(max-width:800px){
+    .admin{
+        flex-direction: column;
+    }
+
+    .admin-content{
+        padding: 10px; /* Adjust padding for smaller screens */
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+    }
+}
