@@ -35,6 +35,8 @@ function ExplorePg() {
   const navigate = useNavigate();
   const [podcasts, setPodcasts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
