@@ -3,6 +3,7 @@ import './Signup.css';
 import { Link, useNavigate } from 'react-router-dom';
 import img from './login.jpg';
 import logo from '..//assets/logo22.gif'; // Import your logo image
+import CONFIG from '../config';
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
@@ -16,7 +17,7 @@ const SignUp = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:4000/signup', {
+      const response = await fetch(`${CONFIG.BASE_URL}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

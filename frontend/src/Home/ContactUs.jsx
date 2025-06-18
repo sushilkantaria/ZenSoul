@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
+import CONFIG from '../config';
 
 const Contact_us = () => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
   
     // Send form data to backend
-    fetch('http://localhost:4000/send-email', {
+    fetch(`${CONFIG.BASE_URL}/send-email`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)

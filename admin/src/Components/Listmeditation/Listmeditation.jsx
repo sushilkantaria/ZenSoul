@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Listmeditation.css';
 import { useNavigate } from 'react-router-dom';
+import CONFIG from "../../config";
 
 const ListMeditation = () => {
     const [allMeditations, setAllMeditations] = useState([]);
@@ -8,7 +9,7 @@ const ListMeditation = () => {
 
     const fetchMeditations = async () => {
         try {
-            const response = await fetch('http://localhost:4000/allmeditations');
+            const response = await fetch(`${CONFIG.BASE_URL}/allmeditations`);
             if (!response.ok) {
                 throw new Error('Failed to fetch meditations');
             }
@@ -25,7 +26,7 @@ const ListMeditation = () => {
 
     const removeMeditation = async (id) => {
         try {
-            const response = await fetch('http://localhost:4000/removemeditation', {
+            const response = await fetch(`${CONFIG.BASE_URL}/removemeditation`, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import JoditEditor from 'jodit-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './EditBlogForm.css';
+import CONFIG from "../../config";
 
 const EditBlogForm = () => {
     const { id } = useParams();
@@ -16,7 +17,7 @@ const EditBlogForm = () => {
 
     useEffect(() => {
         const fetchBlog = async () => {
-            const response = await fetch(`http://localhost:4000/blog/${id}`);
+            const response = await fetch(`${CONFIG.BASE_URL}/blog/${id}`);
             if (response.ok) {
                 const blog = await response.json();
                 setDetails(blog);
@@ -47,7 +48,7 @@ const EditBlogForm = () => {
             formData.append('image', details.image);
         }
 
-        const response = await fetch('http://localhost:4000/editblog', {
+        const response = await fetch(`${CONFIG.BASE_URL}/editblog`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

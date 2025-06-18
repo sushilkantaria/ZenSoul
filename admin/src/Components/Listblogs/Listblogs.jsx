@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import './Listblogs.css';
 import { useNavigate } from 'react-router-dom';
+import CONFIG from "../../config";
 
 const Listblogs = () => {
     const [allblogs, setAllBlogs] = useState([]);
     const navigate = useNavigate();
 
     const fetchInfo = async () => {
-        await fetch('http://localhost:4000/allblogs')
+        await fetch(`${CONFIG.BASE_URL}/allblogs`)
             .then((res) => res.json())
             .then((data) => { setAllBlogs(data); });
     };
@@ -17,7 +18,7 @@ const Listblogs = () => {
     }, []);
 
     const remove_product = async (id) => {
-        await fetch('http://localhost:4000/removeblogs', {
+        await fetch(`${CONFIG.BASE_URL}/removeblogs`, {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

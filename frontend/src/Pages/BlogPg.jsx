@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './BlogPg.css';
+import CONFIG from '../config';
 
 const BlogPg = () => {
   const [blogs, setBlogs] = useState([]);
@@ -10,7 +11,7 @@ const BlogPg = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:4000/allblogs')
+    fetch(`${CONFIG.BASE_URL}/allblogs`)
       .then(res => res.json())
       .then(data => setBlogs(data))
       .catch(err => console.error('Error fetching blogs:', err));

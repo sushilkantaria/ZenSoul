@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import './Addpodcast.css';
+import CONFIG from "../../config";
 
 const AddPodcast = () => {
     const [details, setDetails] = useState({
@@ -15,7 +16,7 @@ const AddPodcast = () => {
 
     const Add_Podcast = async () => {
         try {
-            const response = await fetch('http://localhost:4000/addpodcast', {
+            const response = await fetch(`${CONFIG.BASE_URL}/addpodcast`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

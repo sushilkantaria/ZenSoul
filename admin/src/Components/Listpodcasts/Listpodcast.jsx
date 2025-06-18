@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Listpodcast.css';
 import { useNavigate } from 'react-router-dom';
+import CONFIG from "../../config";
 
 const ListPodcast = () => {
     const [allPodcasts, setAllPodcasts] = useState([]);
@@ -8,7 +9,7 @@ const ListPodcast = () => {
 
     const fetchInfo = async () => {
         try {
-            const response = await fetch('http://localhost:4000/allpodcasts');
+            const response = await fetch(`${CONFIG.BASE_URL}/allpodcasts`);
             if (!response.ok) {
                 throw new Error('Failed to fetch podcasts');
             }
@@ -25,7 +26,7 @@ const ListPodcast = () => {
 
     const remove_podcast = async (id) => {
         try {
-            const response = await fetch('http://localhost:4000/removepodcast', {
+            const response = await fetch(`${CONFIG.BASE_URL}/removepodcast`, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

@@ -2,6 +2,7 @@ import React, { useState, useRef} from "react";
 import './Addblogs.css';
 import 'react-quill/dist/quill.snow.css'
 import JoditEditor from 'jodit-react'
+import CONFIG from "../../config";
 
 const Addblogs = () => {
     const editor=useRef(null)
@@ -30,7 +31,7 @@ const Addblogs = () => {
         let formData = new FormData();
         formData.append('blog', image);
 
-        await fetch('http://localhost:4000/upload',{
+        await fetch(`${CONFIG.BASE_URL}/upload`,{
             method:'POST',
             headers:{
                 Accept:'application/json',
@@ -42,7 +43,7 @@ const Addblogs = () => {
             {
                 blog.image= responseData.image_url;
                 console.log(blog);
-                await fetch('http://localhost:4000/addblogs',{
+                await fetch(`${CONFIG.BASE_URL}/addblogs`,{
                     method:'POST',
                     headers:{
                         Accept:'application/json',

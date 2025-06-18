@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Meditation.css';
+import CONFIG from "../../config";
 
 const AddMeditation = () => {
     const [details, setDetails] = useState({
@@ -14,7 +15,7 @@ const AddMeditation = () => {
 
     const addMeditation = async () => {
         try {
-            const response = await fetch('http://localhost:4000/addMeditation', {
+            const response = await fetch(`${CONFIG.BASE_URL}/addMeditation`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

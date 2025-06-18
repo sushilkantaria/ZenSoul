@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './profile.css';
+import CONFIG from '../config';
 
 const ProfilePage = () => {
     const [userInfo, setUserInfo] = useState(null); // Initialize userInfo as null
@@ -13,7 +14,7 @@ const ProfilePage = () => {
         const userToken = localStorage.getItem('token');
 
         if (userId && userToken) {
-            fetch(`http://localhost:4000/users/${userId}`, {
+            fetch(`${CONFIG.BASE_URL}/users/${userId}`, {
                 headers: {
                     'Authorization': `Bearer ${userToken}`,
                 },
@@ -31,7 +32,7 @@ const ProfilePage = () => {
         const userToken = localStorage.getItem('token');
 
         if (userId && userToken) {
-            fetch(`http://localhost:4000/journal/${userId}`, {
+            fetch(`${CONFIG.BASE_URL}/journal/${userId}`, {
                 headers: {
                     'Authorization': `Bearer ${userToken}`,
                 },
@@ -85,7 +86,7 @@ const ProfilePage = () => {
                                 {entry.images && entry.images.length > 0 && (
                                     <div className="entry-images">
                                         {entry.images.map((img, index) => (
-                                            <img key={index} src={`http://localhost:4000/${img}`} alt={`Journal entry image ${index + 1}`} />
+                                            <img key={index} src={`${CONFIG.BASE_URL}/${img}`} alt={`Journal entry image ${index + 1}`} />
                                         ))}
                                     </div>
                                 )}
@@ -95,7 +96,7 @@ const ProfilePage = () => {
                                     <div className="entry-audios">
                                         {entry.audios.map((audio, index) => (
                                             <audio key={index} controls>
-                                                <source src={`http://localhost:4000/${audio}`} type="audio/mpeg" />
+                                                <source src={`${CONFIG.BASE_URL}/${audio}`} type="audio/mpeg" />
                                                 Your browser does not support the audio element.
                                             </audio>
                                         ))}
@@ -107,7 +108,7 @@ const ProfilePage = () => {
                                     <div className="entry-videos">
                                         {entry.videos.map((video, index) => (
                                             <video key={index} controls>
-                                                <source src={`http://localhost:4000/${video}`} type="video/mp4" />
+                                                <source src={`${CONFIG.BASE_URL}/${video}`} type="video/mp4" />
                                                 Your browser does not support the video element.
                                             </video>
                                         ))}

@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import './Journal.css';
+import CONFIG from '../config';
 
 function JournalPg() {
   const [isPreset, setIsPreset] = useState(true);
@@ -94,7 +95,7 @@ function JournalPg() {
 
     if (mood || formData.get('affirmations').length || formData.get('gratitude').length || formData.get('journalText')) {
         try {
-            const response = await fetch('http://localhost:4000/journal', {
+            const response = await fetch(`${CONFIG.BASE_URL}/journal`, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

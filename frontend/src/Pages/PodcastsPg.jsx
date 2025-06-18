@@ -10,6 +10,7 @@ import aud7 from '../assets/podcasts/aud7.mp3';
 import aud8 from '../assets/podcasts/aud8.mp3';
 import aud9 from '../assets/podcasts/aud9.mp3';
 import aud10 from '../assets/podcasts/aud10.mp3';
+import CONFIG from '../config';
 
 const PodcastsPg = () => {
   const [podcasts, setPodcasts] = useState([]);
@@ -75,7 +76,7 @@ const PodcastsPg = () => {
   useEffect(() => {
     const fetchPodcasts = async () => {
       try {
-        const response = await fetch('http://localhost:4000/allpodcasts'); // Replace with your actual backend endpoint
+        const response = await fetch(`${CONFIG.BASE_URL}/allpodcasts`); // Replace with your actual backend endpoint
         if (!response.ok) {
           throw new Error('Failed to fetch podcasts');
         }
@@ -145,28 +146,6 @@ const PodcastsPg = () => {
             ))}
           </div>
         </div>
-
-        {/* Video Podcasts
-        <div className="podcast-pg-of-explore-section podcast-pg-of-explore-video-section">
-          <div className="podcast-pg-of-explore-video-header">
-            <h2 className="podcast-pg-of-explore-video-header-title">Video Podcasts</h2>
-            <button className="podcast-pg-of-explore-view-more-btn">View More</button>
-          </div>
-          <div className="podcast-pg-of-explore-video-list">
-            {podcasts.filter(podcast => podcast.category === 'video').map((podcast, index) => (
-              <div className="podcast-pg-of-explore-video-item" key={index}>
-                <img src={`https://via.placeholder.com/80?text=Video+${index + 1}`} alt={`Video ${index + 1}`} />
-                <div className="podcast-pg-of-explore-video-info">
-                  <a href="#" className="podcast-pg-of-explore-video-title">{podcast.title}</a>
-                  <div className="podcast-pg-of-explore-video-time">{podcast.duration}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-
-        <div className="podcast-pg-of-explore-section podcast-pg-of-explore-blank-section"></div> */}
       </section>
     </div>
   );

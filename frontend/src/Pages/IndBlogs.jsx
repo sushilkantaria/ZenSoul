@@ -4,6 +4,7 @@ import AnxiousBlogImg from '../assets/final-attachment.jpg';
 import AnxiousMind from '../assets/anxious-mind.png';
 import './IndBlogs.css';
 import DOMPurify from 'dompurify';
+import CONFIG from '../config';
 
 
 const IndBlogs = (BlogData) => {
@@ -26,7 +27,7 @@ const IndBlogs = (BlogData) => {
     // Fetch blog data by ID
     const fetchBlogData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/blog/${id}`);
+        const response = await fetch(`${CONFIG.BASE_URL}/blog/${id}`);
         const data = await response.json();
         setBlogData(data);
       } catch (error) {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './PasswordReset.css'; // Add CSS file for styling
+import CONFIG from '../config';
 
 const ResetPassword = () => {
   const [password, setPassword] = useState('');
@@ -20,7 +21,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:4000/reset-password/${token}`, {
+      const response = await fetch(`${CONFIG.BASE_URL}/reset-password/${token}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

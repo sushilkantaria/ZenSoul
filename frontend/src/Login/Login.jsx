@@ -4,6 +4,7 @@ import {jwtDecode} from 'jwt-decode'; // Import jwt_decode correctly
 import './Login.css';
 import img from './login.jpg';
 import logo from '../assets/logo22.gif'; // Import your logo image
+import CONFIG from '../config';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -16,7 +17,7 @@ const Login = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:4000/login', {
+      const response = await fetch(`${CONFIG.BASE_URL}/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

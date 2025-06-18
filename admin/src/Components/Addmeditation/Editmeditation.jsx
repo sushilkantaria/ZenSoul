@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import './Editmeditation.css';
+import CONFIG from "../../config";
 
 const EditMeditation = () => {
     const { id } = useParams();
@@ -14,7 +15,7 @@ const EditMeditation = () => {
     useEffect(() => {
         const fetchMeditation = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/meditation/${id}`);
+                const response = await fetch(`${CONFIG.BASE_URL}/meditation/${id}`);
                 if (response.ok) {
                     const meditation = await response.json();
                     setDetails(meditation);
@@ -34,7 +35,7 @@ const EditMeditation = () => {
 
     const editMeditation = async () => {
         try {
-            const response = await fetch('http://localhost:4000/editmeditation', {
+            const response = await fetch(`${CONFIG.BASE_URL}/editmeditation`, {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
