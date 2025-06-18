@@ -13,6 +13,8 @@ const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const saltRounds = 10; // Number of rounds for salt generation
 const fs= require('fs');
+require('dotenv').config();
+
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -21,10 +23,19 @@ app.use(cors());
 
 
 //Database connection
-mongoose.connect("mongodb://localhost:27017/Zen_Soul",{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-});
+// mongoose.connect("mongodb://localhost:27017/Zen_Soul",{
+//     useNewUrlParser:true,
+//     useUnifiedTopology:true
+// });
+
+//Database connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log("MongoDB Atlas Connected"))
+.catch(err => console.log("MongoDB Connection Failed: ", err));
+
 
 
 //API Creation
