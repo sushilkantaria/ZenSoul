@@ -76,27 +76,6 @@ function PSE() {
                            
                             
                              </ol>
-                    
-                        {/* <ol className='anxiety-pg-ind-ul-yoga'>
-                            
-                            <li> <b>Eyebrow (EB) </b> Where the eyebrows start at the bridge of the nose </li>
-
-                            <li> <b> Side of the Eye (SE) </b>  On the bone along the outside of either eye</li>
-
-                            <li> <b>Side of the Eye (SE)</b> On the top of the cheekbone under either eye.</li>
-
-                            <li> <b>Under the Nose (UN)</b> The area beneath the nose and above the upper lip</li>
-
-                            <li> <b>Chin Point (Ch)</b> The crease between your bottom lip and chin </li>
-
-                            <li> <b>Chin Point (Ch)</b> About two inches below and to the side of where your collar bones meet </li>
-
-                            <li> <b>Under the Arm (UA)</b> On each side, about four inches beneath the armpits</li>
-
-                            <li> <b>Top of the Head (TOH)</b> Directly on the crown of your head </li>
-
-                            <li> <b>Karate Chop (KC)</b> The outer edge of the hand, on the opposite side from the thumb </li>
-                        </ol> */}
                     </section>
 
                     <section id="What Are 11 Somatic Exercises?">
