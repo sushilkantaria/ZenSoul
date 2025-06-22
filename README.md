@@ -16,7 +16,6 @@ ZenSoul is a full-featured mental health and wellness platform designed to help 
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -118,11 +117,6 @@ npm start
 cd ../admin-panel
 npm install
 npm start
-
----
-
-📄 License
-This project is licensed under the MIT License.
 
 ---
 
